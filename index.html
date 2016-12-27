@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikipedia Viewer</title>
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!--Font Awesome (not needed for this app)-->
+  <!-- <script src="https://use.fontawesome.com/f9ff2609a9.js"></script> -->
+
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+
+
+  <!--Page style -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    input[type=text] {
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('https://s3-us-west-1.amazonaws.com/personalprojectfiles/search.svg');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+      width: 55%;
+    }
+
+    #resultCards {
+      max-width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="container container-fluid">
+  <div class="title well">
+    <h1> I want to learn more about... </h1>
+    <p>
+      Search wikipedia for entires or <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">learn about anything  <i class="material-icons">casino</i></a>
+    </p>
+    <input type="text" name="search" placeholder="Search.." id="lookup">
+  </div>
+
+  <div class="results container">
+    <div class="row" id="resultCards">
+
+    </div>
+  </div>
+
+  <footer class="well">
+    <small>
+      Made as a project for <a href="http://freecodecamp.com/mathewleland">Free Code Camp.</a>
+    </small>
+    <small>
+      See a full list of projects by <a href="https://github.com/mathewleland">Mathew Leland</a>
+    </small>
+  </footer>
+
+</div> <!--container fluid-->
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- JQuery -->
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+<!-- Page specific JS and Material Design cdn links -->
+<script src="js/wiki.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+<script> $(function() { $.material.init(); }); </script>
+</body>
+
+
+</html>
