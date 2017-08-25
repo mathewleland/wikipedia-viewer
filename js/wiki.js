@@ -17,7 +17,7 @@ $(document).ready(function(){
           const url = `https://en.wikipedia.org/wiki/${title.split(" ").join("_")}`;
 
           //build the card
-          let cardHTML = `<div class="col-xs-12 col-xs-4"><div class="cardd">
+          let cardHTML = `<div class="animated fadeInRight col-xs-12 col-xs-4"><div class="cardd">
                           <a class="img-card" href="${url}" target="_blank">`
           if (val.thumbnail) {
             //add thumnail if there is one on the page, else add a "no image available" pic
